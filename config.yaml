@@ -68,6 +68,7 @@ provide_settings:
    provider: "SiliconflowEmbedding"
    config:
      model: "BAAI/bge-m3"
+     dimension: 1024
 # .    api_key: ""   # Uncomment to override the `SILICONFLOW_API_KEY` set in the environment variable   
 
   file_loader:
