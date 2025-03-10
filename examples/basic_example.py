@@ -11,6 +11,7 @@ httpx_logger.setLevel(logging.WARNING)
 current_dir = os.path.dirname(os.path.abspath(__file__))
  # replace with your openai api key
 config = Configuration()  # Customize your config here
+config.set_provider_config("embedding", "SiliconflowEmbedding", {"model": "BAAI/bge-m3"})
 config.set_provider_config("llm", "SiliconFlow", {"model": "Pro/deepseek-ai/DeepSeek-V3"})
 init_config(config=config)
 
