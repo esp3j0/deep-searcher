@@ -20,7 +20,7 @@ init_config(config=config)
 # git clone https://github.com/milvus-io/milvus-docs.git
 # Then replace the path below with the path to the milvus-docs repo on your local machine
 import glob
-all_md_files = glob.glob('xxx/milvus-docs/site/en/**/*.md', recursive=True)
+all_md_files = glob.glob('../milvus-docs/site/en/**/*.md', recursive=True)
 load_from_local_files(paths_or_directory=all_md_files, collection_name="milvus_docs", collection_description="All Milvus Documents")
 
 # Hint: You can also load a single file, please execute it in the root directory of the deep searcher project
